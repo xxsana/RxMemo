@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		49D338D42782EAC5005C7E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D338D32782EAC5005C7E41 /* AppDelegate.swift */; };
 		49D338D62782EAC5005C7E41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D338D52782EAC5005C7E41 /* SceneDelegate.swift */; };
-		49D338D82782EAC5005C7E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D338D72782EAC5005C7E41 /* ViewController.swift */; };
 		49D338DB2782EAC5005C7E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D338D92782EAC5005C7E41 /* Main.storyboard */; };
 		49D338DE2782EAC5005C7E41 /* RxMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49D338DC2782EAC5005C7E41 /* RxMemo.xcdatamodeld */; };
 		49D338E02782EACD005C7E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D338DF2782EACD005C7E41 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		49D338D02782EAC5005C7E41 /* RxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D338D32782EAC5005C7E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49D338D52782EAC5005C7E41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49D338D72782EAC5005C7E41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49D338DA2782EAC5005C7E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49D338DD2782EAC5005C7E41 /* RxMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxMemo.xcdatamodel; sourceTree = "<group>"; };
 		49D338DF2782EACD005C7E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,8 +48,44 @@
 				9C838AA4AFEBAB00579CFEEF /* Pods-RxMemo.debug.xcconfig */,
 				0DBAC4E8303E61393736CE21 /* Pods-RxMemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		49568F532782EF0E001B86B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49568F542782EF22001B86B8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49D338D92782EAC5005C7E41 /* Main.storyboard */,
+				49D338E12782EACD005C7E41 /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		49568F552782EF2E001B86B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		49568F562782EF47001B86B8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		49568F5727843375001B86B8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		49D338C72782EAC5005C7E41 = {
@@ -75,12 +109,14 @@
 		49D338D22782EAC5005C7E41 /* RxMemo */ = {
 			isa = PBXGroup;
 			children = (
+				49568F5727843375001B86B8 /* Scene */,
+				49568F562782EF47001B86B8 /* Service */,
+				49568F552782EF2E001B86B8 /* ViewModel */,
+				49568F542782EF22001B86B8 /* ViewController */,
+				49568F532782EF0E001B86B8 /* Model */,
 				49D338D32782EAC5005C7E41 /* AppDelegate.swift */,
 				49D338D52782EAC5005C7E41 /* SceneDelegate.swift */,
-				49D338D72782EAC5005C7E41 /* ViewController.swift */,
-				49D338D92782EAC5005C7E41 /* Main.storyboard */,
 				49D338DF2782EACD005C7E41 /* Assets.xcassets */,
-				49D338E12782EACD005C7E41 /* LaunchScreen.storyboard */,
 				49D338E42782EACD005C7E41 /* Info.plist */,
 				49D338DC2782EAC5005C7E41 /* RxMemo.xcdatamodeld */,
 			);
@@ -209,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49D338D82782EAC5005C7E41 /* ViewController.swift in Sources */,
 				49D338D42782EAC5005C7E41 /* AppDelegate.swift in Sources */,
 				49D338D62782EAC5005C7E41 /* SceneDelegate.swift in Sources */,
 				49D338DE2782EAC5005C7E41 /* RxMemo.xcdatamodeld in Sources */,
