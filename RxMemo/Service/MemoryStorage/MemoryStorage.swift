@@ -25,6 +25,7 @@ class MemoryStorage: MemoStorageType {
     
     private lazy var store = BehaviorSubject<[Memo]>(value: list)
     
+    // 쓸지안쓸지 모르는 return값에는 현 memo가 나옴
     @discardableResult
     func createMemo(content: String) -> Observable<Memo> {
         let memo = Memo(content: content)
